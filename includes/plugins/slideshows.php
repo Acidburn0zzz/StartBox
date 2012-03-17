@@ -1137,5 +1137,3 @@ function sb_slideshow_edit_admin_style() {
 <?php
 }
 add_action( 'admin_print_styles-edit.php', 'sb_slideshow_edit_admin_style' );
-
-?>

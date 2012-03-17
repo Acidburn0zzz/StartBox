@@ -3,27 +3,27 @@
 Template Name: Tertiary Sidebar
 */
 ?>
-<?php get_header() ?>
+<?php get_header(); ?>
 
 	<div id="container">
 		<div id="content">
 
-		<?php the_post() ?>
+		<?php the_post(); ?>
 		
-		<?php sb_before_content();?>
+		<?php sb_before_content(); ?>
 		
-			<div id="post-<?php the_ID(); ?>" <?php post_class() ?>>
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php sb_page_title(); ?>
 				<div class="entry-content">
-					<?php the_content() ?>
+					<?php the_content(); ?>
 
 					<?php wp_link_pages("\t\t\t\t\t<div class='page-link'>".__('Pages: ', 'startbox'), "</div>\n", 'number'); ?>
 
-					<?php edit_post_link(__('Edit', 'startbox'),'<span class="edit-link">','</span>') ?>
+					<?php edit_post_link(__('Edit', 'startbox'),'<span class="edit-link">','</span>'); ?>
 				</div>
 			</div><!-- .post -->
 
-			<?php sb_after_content();?>
+			<?php sb_after_content(); ?>
 			
 			<?php comments_template( '', true ); ?>
 
@@ -45,4 +45,4 @@ Template Name: Tertiary Sidebar
 	   <?php do_action( "sb_after_{$location}_widgets" ); ?>
 	
 <?php } ?>
-<?php get_footer() ?>
+<?php get_footer(); ?>

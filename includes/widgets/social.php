@@ -191,4 +191,3 @@ class sb_widget_social extends WP_Widget {
 			<?php
 	}
 }
-?>

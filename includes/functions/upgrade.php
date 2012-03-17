@@ -106,5 +106,3 @@ class sb_upgrade {
 }
 sb_upgrade::go();
 endif;
-
-?>

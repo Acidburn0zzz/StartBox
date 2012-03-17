@@ -23,4 +23,3 @@ class sb_upgrade_settings extends sb_settings {
 }
 
 if ( current_theme_supports('sb-updates') ) sb_register_settings('sb_upgrade_settings');
-?>

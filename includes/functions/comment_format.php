@@ -149,4 +149,3 @@ if ( !function_exists( 'sb_pings' ) ) {
 	    		<li><?php comment_author_link() ?></li>
 	<?php } 
 }
-?>

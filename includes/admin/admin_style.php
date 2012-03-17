@@ -50,5 +50,3 @@ function sb_style_init() {
 	add_action( "admin_print_styles-$sb_style", 'sb_admin_scripts' );
 }
 //add_action( 'admin_menu', 'sb_style_init' );
-
-?>

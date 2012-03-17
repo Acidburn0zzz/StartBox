@@ -358,5 +358,4 @@ if ( !function_exists('is_sidebar_active') ) {
 		if ( isset( $widgetcolums[$index] ) && $widgetcolums[$index] == true ) return true;
 		return false;
 	}
-} 
-?>
+}

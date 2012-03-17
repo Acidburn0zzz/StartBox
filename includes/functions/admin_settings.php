@@ -1,5 +1,4 @@
 <?php
-
 /**
  * StartBox Options API
  *
@@ -864,5 +863,3 @@ function sb_unregister_option( $metabox, $option, $new_value = '') {
 	if ($new_value)
 		sb_update_option( $option, $new_value);
 }
-
-?>

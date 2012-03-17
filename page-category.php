@@ -3,18 +3,18 @@
 Template Name: Display Posts
 */
 ?>
-<?php get_header() ?>
+<?php get_header(); ?>
 
 	<div id="container">
 		<div id="content">
 
-		<?php the_post() ?>	
+		<?php the_post(); ?>	
 		
-		<?php sb_before_content();?>
+		<?php sb_before_content(); ?>
 
 		<?php sb_page_title(); ?>
-		<?php the_content() ?>
-		<?php edit_post_link( __('Edit', 'startbox'), '<span class="edit-link">', '</span>' ) ?>
+		<?php the_content(); ?>
+		<?php edit_post_link( __('Edit', 'startbox'), '<span class="edit-link">', '</span>' ); ?>
 
 			<?php
 				$temp_post = $post;
@@ -40,10 +40,10 @@ Template Name: Display Posts
 				$post = $temp_post;
 			?>
 			
-		<?php sb_after_content();?>
+		<?php sb_after_content(); ?>
 		
 		</div><!-- #content -->
 	</div><!-- #container -->
 
-<?php get_sidebar() ?>
-<?php get_footer() ?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

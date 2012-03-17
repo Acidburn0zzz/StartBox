@@ -1,13 +1,13 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
 	<div id="container">
 		<div id="content">
 
-		<?php the_post() ?>
+		<?php the_post(); ?>
 			
-			<?php sb_before_content();?>
+			<?php sb_before_content(); ?>
 			
-			<div id="post-<?php the_ID() ?>" <?php post_class() ?>>
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php sb_page_title(); ?>
 				<div class="entry-meta">
 					<?php sb_post_header(); ?>
@@ -26,12 +26,12 @@
 				</div>
 			</div><!-- .post -->
 			
-			<?php sb_after_content();?>
+			<?php sb_after_content(); ?>
 			
 			<?php comments_template('', true); ?>
 
 		</div><!-- #content -->
 	</div><!-- #container -->
 
-<?php get_sidebar() ?>
-<?php get_footer() ?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

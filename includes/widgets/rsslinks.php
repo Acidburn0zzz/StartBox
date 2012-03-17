@@ -56,6 +56,3 @@ class sb_rss_widget extends WP_Widget {
 	}
 }
 // register_widget('sb_rss_widget'); // Deprecated 09/03/10
-
-
-?>

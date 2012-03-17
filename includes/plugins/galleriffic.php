@@ -152,4 +152,3 @@ function galleriffic_gallery() {
 	return $output;
 
 }
-?>

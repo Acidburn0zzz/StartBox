@@ -868,5 +868,3 @@ function sb_verify_post_type( $type ) {
 	else
 		return false;
 }
-
-?>

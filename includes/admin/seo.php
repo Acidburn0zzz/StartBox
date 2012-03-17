@@ -45,5 +45,3 @@ class sb_seo_settings extends sb_settings {
 // Only include this metabox if no other popular SEO plugins are active
 if ( !defined('WPSEO_FRONT_URL') && !class_exists('All_in_One_SEO_Pack') && !class_exists('Platinum_SEO_Pack') && !class_exists('HeadSpace_Plugin') )
 	sb_register_settings('sb_seo_settings');
-	
-?>

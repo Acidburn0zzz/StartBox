@@ -24,5 +24,3 @@ function sb_deprecated_templates() {
 	}
 }
 add_action( 'sb_before_content', 'sb_deprecated_templates' );
-
-?>

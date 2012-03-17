@@ -79,5 +79,3 @@ class sb_search_widget extends WP_Widget {
 		echo $after_widget;
 	}
 }
-
-?>

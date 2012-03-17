@@ -207,5 +207,3 @@ function sb_sanitize($inputs) {
 	}
 	return $inputs;
 }
-
-?>

@@ -79,5 +79,3 @@ class sb_slideshow_widget extends WP_Widget {
 		echo $after_widget;
 	}
 }
-
-?>

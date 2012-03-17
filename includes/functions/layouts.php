@@ -297,5 +297,3 @@ function sb_layouts_term_meta_filter($term, $taxonomy) {
 	
 }
 add_filter('get_term', 'sb_layouts_term_meta_filter', 10, 2);
-
-?>

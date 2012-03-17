@@ -97,5 +97,3 @@ class sb_ads_widget extends WP_Widget {
 		echo $after_widget;
 	}
 }
-
-?>

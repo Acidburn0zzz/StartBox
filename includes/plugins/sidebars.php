@@ -440,5 +440,3 @@ function sb_sidebars_update_messages( $messages ) {
 	return $messages;
 }
 add_filter( 'post_updated_messages', 'sb_sidebars_update_messages' );
-
-?>

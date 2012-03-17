@@ -627,4 +627,3 @@ function sb_protected( $atts, $content = null) {
 		return apply_filters( 'sb_protected', $output );
 	}
 }
-?>

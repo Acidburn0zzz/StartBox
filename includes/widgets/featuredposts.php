@@ -461,4 +461,3 @@ class sb_featured_content_widget extends WP_Widget {
 	<?php
 	}
 }
-?>

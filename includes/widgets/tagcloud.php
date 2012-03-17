@@ -159,5 +159,3 @@ class sb_tagcloud_widget extends WP_Widget {
 		echo $after_widget;
 	}
 }
-
-?>

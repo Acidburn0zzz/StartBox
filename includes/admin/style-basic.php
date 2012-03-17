@@ -35,4 +35,3 @@ class sbc_style_settings extends sb_settings {
 
 }	
 //sb_register_settings('sbc_style_settings');
-?>

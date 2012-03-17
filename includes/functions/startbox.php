@@ -1,5 +1,4 @@
 <?php
-
 /**
  * StartBox - Main class
  *
@@ -374,5 +373,3 @@ class StartBox {
  * responsibility seriously. And if you have a gift for showing kindness to others,
  * do it gladly. - Romans 12:6-8 (http://bit.ly/rom12nlt)
 */
-
-?>
