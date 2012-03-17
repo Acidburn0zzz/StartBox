@@ -9,6 +9,7 @@
  * @since StartBox 2.4.9
  */
 
+if( ! class_exists( 'sb_upgrade' ) ):
 class sb_upgrade {
 	// Check to see if a new version of StartBox is available.
 	function update_check() {
@@ -59,7 +60,7 @@ class sb_upgrade {
 
 	// Adds upgrade notification to WP's built-in check
 	function update_include($value) {
-		if ( $sb_update = $this->update_check() ) {
+		if ( $sb_update = self::update_check() ) {
 			$value->response['startbox'] = $sb_update;
 		}
 		return $value;
@@ -72,7 +73,7 @@ class sb_upgrade {
 		if (!sb_get_option('enable_updates') || sb_get_option('disable_update_notifications') )
 			return;
 
-		$sb_update = $this->update_check();
+		$sb_update = self::update_check();
 
 		if ( !is_super_admin() || !$sb_update )
 			return false;
@@ -94,15 +95,16 @@ class sb_upgrade {
 	}
 	
 	// This makes everything work and hooks it where it belongs.
-	public function __construct() {
-		add_filter('site_transient_update_themes', array( $this, 'update_include') );
-		add_filter('transient_update_themes', array( $this, 'update_include') );
-		add_action('admin_notices', array( $this, 'update_notification') );
-		add_action('load-update.php', array( $this, 'clear_update_transient') );
-		add_action('load-themes.php', array( $this, 'clear_update_transient') );
+	public function go() {
+		add_filter('site_transient_update_themes', array( __CLASS__, 'update_include') );
+		add_filter('transient_update_themes', array( __CLASS__, 'update_include') );
+		add_action('admin_notices', array( __CLASS__, 'update_notification') );
+		add_action('load-update.php', array( __CLASS__, 'clear_update_transient') );
+		add_action('load-themes.php', array( __CLASS__, 'clear_update_transient') );
 	}
 	
 }
-$sb_upgrade = new sb_upgrade;
+sb_upgrade::go();
+endif;
 
 ?>
